@@ -33,13 +33,13 @@ options.events = {
 ```js
 // dependencies
 const Koa = require('koa')
-const proxy = require('koa-http-proxy-middleware')
+const {httpProxy} = require('koa-http-proxy-middleware')
 const httpsProxyAgent = require('https-proxy-agent')
 
 const app = new Koa()
 
 // middleware
-app.use(proxy('/octocat', {
+app.use(httpProxy('/octocat', {
   target: 'https://api.github.com/users',
   changeOrigin: true,
   agent: new httpsProxyAgent('http://1.2.3.4:88'),
