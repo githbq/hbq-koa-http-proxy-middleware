@@ -1,5 +1,5 @@
 {
-    "name": "hbq-koa-http-proxy-middleware",
+    "name": "koa-http-proxy-middleware",
     "version": "0.0.1",
     "description": "hbq-koa-http-proxy-middleware",
     "main": "build/index.js",
@@ -13,7 +13,11 @@
         "p": "npm run tsc && npm publish",
         "lint": "tslint \"src/**/*.ts\""
     },
-    "dependencies": {"tslib": "^1.6.1"},
+    "dependencies": {
+        "http-proxy": "^1.16.2",
+        "match-path-plus": "^0.0.1",
+        "tslib": "^1.6.1"
+    },
     "devDependencies": {
         "@types/mocha": "^2.2.41",
         "@types/node": "^6.0.48",
