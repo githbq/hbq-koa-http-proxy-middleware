@@ -1,7 +1,7 @@
 {
     "name": "koa-http-proxy-middleware",
     "version": "0.0.1",
-    "description": "hbq-koa-http-proxy-middleware",
+    "description": "koa-http-proxy-middleware",
     "main": "build/index.js",
     "scripts": {
         "start:build": "npm run tsc && node build",
@@ -31,7 +31,9 @@
     },
     "keywords": [
         "typescript",
-        "hbq-koa-http-proxy-middleware"
+        "koa-http-proxy-middleware",
+        "koa",
+        "proxy"
     ],
     "author": "hubiqing",
     "repository": "https://github.com/githbq/hbq-module-boilerplate.git",
